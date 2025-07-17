@@ -34,6 +34,9 @@ public class GameManager : MonoBehaviour
     public GameObject gameUI;
     public GameObject endUI;
 
+    [Header("Audio")]
+    public AudioSource source;
+    public AudioClip yay;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +81,9 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         SetScreen(endUI);
+        source.clip = yay;
+        source.Play();
+
 
 
     }
