@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
         timeActive = false;
         player.enabled = false;
         endUI_score.text = "companies: " + player.coinCount;
-        endUI_time.text = "time: " + (time * 10).ToString("F2");
+        endUI_time.text = "time: " + (time * 1).ToString("F2");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         SetScreen(endUI);
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
         }
         gameUI_score.text = "companies: " + player.coinCount;
         gameUI_health.text = "money in billions: " + player.health;
-        gameUI_time.text = "Time: " + (time * 10).ToString("F2");
+        gameUI_time.text = "Time: " + (time * 1).ToString("F2");
     }
 
     public void SetScreen(GameObject screen)

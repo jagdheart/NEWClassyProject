@@ -22,12 +22,12 @@ public class PlayerController : MonoBehaviour
         // get the input axis
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-       Vector3 rotation = Vector3.up * x;
+      Vector3 rotation = Vector3.up * x;
        Quaternion anglerRot = Quaternion.Euler(rotation * Time.fixedDeltaTime);
         Vector3 dir = (transform.forward * z + transform.right * x) * moveSpeed;
         dir.y = rig.velocity.y;
         rig.velocity = dir;
-       // rig.MoveRotation(rig.rotation * anglerRot);
+        rig.MoveRotation(rig.rotation * anglerRot);
        if(Mathf.Abs(x) > 0.1f || Mathf.Abs(z) > 0.1f)
         {
             anim.SetBool("isRunning", true);
