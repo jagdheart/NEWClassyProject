@@ -677,6 +677,8 @@ UnityEngine.ResourcesAPIInternal::Load
 UnityEngine.ResourcesAPIInternal::FindShaderByName
 UnityEngine.Rigidbody::get_mass
 UnityEngine.Rigidbody::AddForce_Injected
+UnityEngine.Rigidbody::MoveRotation_Injected
+UnityEngine.Rigidbody::get_rotation_Injected
 UnityEngine.Rigidbody::get_velocity_Injected
 UnityEngine.Rigidbody::set_detectCollisions
 UnityEngine.Rigidbody::set_isKinematic
